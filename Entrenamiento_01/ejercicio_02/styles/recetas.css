@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    height: 3rem;
+    background-color: rgb(46, 163, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .1em solid black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 3rem;
+  background-color: rgb(46, 163, 148);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: .1em solid black;
+}
+
+header a{
+    color: black;
+    margin: 1rem;
+}
+
+.recetas{
+    font-size: 1.4rem;
+}
+
+.recetas h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header{
+    top: 0;
+}
+
+.imagen{
+    width: 40rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+main{
+    padding: 3rem 0;
+}
+
+.articulo-receta{
+    padding: 2rem;
+    margin: 1rem 0;
+    border: .15rem solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    border-top-left-radius: 6rem;
+    border-bottom-right-radius: 6rem;   
+}
+
+.articulo-receta img{
+    display: flex;
+    justify-content: center;
+}
+
+.Pasos h3{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+
+.Pasos ol{
+    padding: 0 4rem;
+}
+
+.volver{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 2rem;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: blue;
+    opacity: 80%;
+}

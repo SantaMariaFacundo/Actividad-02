@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    border-left: .18rem solid black;
+    border-right: .18rem solid black;
+    font-size: 1.2rem;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.informacion p {
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
+
+}
+
+main{
+    min-height: 100vh;
+    background-color: lightsteelblue;
+}
+
+img {
+    margin-right: 1rem;
+}
+
+.info-general {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Ubicación {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Ubicación iframe{
+    margin-right: 1rem;
+}
+
+.mas-info {
+    width: 100%;
+}
+
+.mas-info h3{
+    display: flex;
+    justify-content: center;
+}
+
+.mas-info ul {
+    margin-top: .5rem;
+    margin-left: 3rem;
+}
+
+.volver{
+    padding: 1rem;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: blue;
+    opacity: 80%;
+}

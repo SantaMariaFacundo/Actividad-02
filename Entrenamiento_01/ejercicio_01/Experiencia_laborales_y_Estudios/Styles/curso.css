@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    border-left: .18rem solid black;
+    border-right: .18rem solid black;
+    font-size: 1.2rem;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-curso {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.info-curso h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.info-cursada{
+    margin-top: 1rem;
+}
+
+.info-curso p {
+    margin-top: 1rem;
+}
+
+.info-curso ul {
+    margin-top: 1rem;
+}
+
+.imagenCurso img {
+    margin: 1rem;
+}
+
+img {
+    width: 27rem;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8rem;
+}
+
+.volver {
+    display: flex;
+    justify-content: center;
+    margin-top: 11rem;
+}
+
+main {
+    min-height: 100vh;
+    background-color: wheat;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: blue;
+    opacity: 80%;
+}

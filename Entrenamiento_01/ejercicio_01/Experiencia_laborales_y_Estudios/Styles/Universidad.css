@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    border-left: .18rem solid black;
+    border-right: .18rem solid black;
+    font-size: 1.2rem;
+    
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: .5rem;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-hospital{
+    margin: 1rem;
+    margin-left: 3rem;
+}
+
+.info-hospital h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.imagenUni img{
+    margin: 1rem;
+}
+
+img{
+    width: 35rem;
+    height: 100%;
+    object-fit: cover;
+}
+
+.volver{
+    display: flex;
+    justify-content: center;
+    margin-top: 11.5rem;
+}
+
+main{
+    min-height: 100vh;
+    background-color: wheat;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: blue;
+    opacity: 80%;
+}

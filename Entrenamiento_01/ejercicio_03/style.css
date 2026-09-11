@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(46, 163, 148);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .3rem; 
+    border-bottom: .1rem solid black;  
+}
+
+header h1 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+main{
+    background-color: wheat;
+    padding: 6rem 0;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    border-left: .1rem solid black;
+    border-right: .1rem solid black;
+}
+
+
+.lista-recetas{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lista-recetas h2{
+    margin-left: 3rem;
+}
+
+.lista-recetas ul{
+    margin: 0 2rem;
+}
+
+.lista-recetas li{
+    margin: 1rem .5rem;
+}
+
+.lista-recetas a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.lista-recetas a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    color:  rgb(109, 0, 0);
+}
+
+.receta{
+    width: 95%;
+    background-color: rgb(104, 167, 112);
+    margin: 2rem auto;
+    padding: 1rem;
+    border: .15rem solid black;
+    scroll-margin-top: 80px;
+}
+
+.indice{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 4rem;
+}
+
+.indice a{
+    text-decoration: none; 
+}
+
+.indice a:hover{
+    text-decoration: underline;
+    color: rgb(255, 200, 200); 
+}
+
+.volver{
+    display: flex;
+    justify-content: center;
+}
+
+.volver a{
+    text-decoration: none;
+}
+
+.volver a:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
