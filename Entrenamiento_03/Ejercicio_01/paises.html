@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paises</title>
+</head>
+<script type="module" src="paises.js"></script>
+
+
+<body>
+    <header>
+        <h1>Busca tu Pais</h1>
+    </header>
+    <main>
+        <form action="">
+            <label class="label-class" for="buscador"></label>
+            <input type="search" class="search-class" id="buscador" placeholder="Pais a buscar">
+        </form>
+        
+        <div id="grid-paises" class="grid-paises"></div>
+        
+        <div id="overlay" class="overlay hidden">
+            <div id="modal" class="modal">
+                <button id="btn-cerrar" class="btn-cerrar">X</button>
+                <div id="infoExtra"></div>
+            </div>
+        </div>
+        <a class="back" href="../../index.html"><span>BACK</span></a>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

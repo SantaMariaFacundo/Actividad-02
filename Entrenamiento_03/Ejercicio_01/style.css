@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    border-bottom: .1rem solid black;
+}
+
+.back{
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+span{
+    padding: .3rem .7rem;
+    border: .1rem solid black;
+    border-radius: .7rem;
+    background-color: black;
+    display: inline-block;
+    transition: 0.2s ;
+}
+
+span:hover{
+    transform: scale(1.1);
+}
+
+
+header h1{
+    grid-column: 2;
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    width: 80%;
+    flex: 1;
+    margin: 0 auto;
+    border-left: .1rem solid black;
+    border-right: .1rem solid black;
+    padding: 1rem 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.search-class {
+    width: 30%;
+    height: 2.5rem;
+    border: .1rem solid black;
+    border-radius: 1.5rem;
+    padding: .5rem;
+}
+
+.search-class::placeholder {
+    font-size: 1rem;
+}
+
+#grid-paises {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: cornsilk;
+    border: .1rem solid black;
+    border-radius: .6rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: cornsilk;
+    z-index: 1001;
+    width: 40%;
+    height: auto;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.btn-cerrar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    padding: .3rem;
+    border-radius: 25%;
+    text-decoration: none;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: .5rem;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.bandera-img, .modal-bandera{
+    width: 6rem;
+    height: 3.5rem;
+    object-fit: cover;
+}
+
+main a:last-of-type {
+  display: flex;
+  justify-content: center;
+}

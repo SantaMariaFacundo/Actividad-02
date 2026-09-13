@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main {
+.conteiner {
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -12,7 +12,7 @@ main {
     grid-template-rows: repeat(3, 1fr);
 }
 
-div {
+.celda {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,13 +39,17 @@ div {
 }
 
 @media screen and (max-width: 48rem) {
-    main{
+    .conteiner {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
     }
 
-    
-    .celda-2, .celda-4, .celda-5{
+
+    .celda-2,
+    .celda-4,
+    .celda-5 {
         display: none;
     }
+
+
 }

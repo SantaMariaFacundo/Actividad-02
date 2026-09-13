@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-main {
+.conteiner {
     width: 100%;
     min-height: 100vh;
     display: grid;
@@ -12,7 +12,7 @@ main {
     grid-template-rows: 1fr 2fr 1fr;
 }
 
-div {
+.conteiner div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ div {
 }
 
 @media screen and (max-width: 48rem) {
-    main {
+    .conteiner {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 25% 25% 15% 15% 20%;
     }
