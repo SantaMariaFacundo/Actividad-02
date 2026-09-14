@@ -2,25 +2,41 @@ import { countries } from "./paises.js";
 const overlay = document.getElementById('overlay');
 const infoExtra = document.getElementById('infoExtra');
 const boton = document.getElementById('btn-cerrar');
+const search = document.getElementById('buscador');
+
+search.addEventListener('input', (e) => {
+    const text = e.target.value.toLowerCase().trim();
+    
+
+    const filtrados = countries.filter(country => country.name.toLocaleLowerCase().startsWith(text));
+   
+    
+
+    mostrarPaises(filtrados);
+});
 
 boton.addEventListener("click", () => {
-    overlay.classList.add('hidden');
-    document.body.classList.remove("no-scroll");
+    cerrarModal();
 })
 
 overlay.addEventListener("click", (e) => {
     if (e.target === overlay) {
-        overlay.classList.add('hidden');
-        document.body.classList.remove("no-scroll");
+        cerrarModal();
     }
 
 })
 
+function cerrarModal(){
+    overlay.classList.add('hidden');
+     document.body.classList.remove("no-scroll");
+}
 
-function mostrarPaises() {
+
+function mostrarPaises(lista = countries) {
     const contenedor = document.getElementById("grid-paises");
-
-    countries.forEach(country => {
+    contenedor.innerHTML = "";
+    
+    lista.forEach(country => {
         const card = document.createElement("div");
         card.classList.add("card");
 
@@ -67,4 +83,6 @@ function mostrarPaises() {
 
 }
 
-document.addEventListener("DOMContentLoaded", mostrarPaises);
+document.addEventListener("DOMContentLoaded", () => {
+    mostrarPaises();
+});
